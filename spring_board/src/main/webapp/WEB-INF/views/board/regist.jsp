@@ -28,94 +28,94 @@ body {
 </style>
 
 <!-- bootstrap & fontawesome -->
-<link rel="stylesheet" href="<%=request.getContextPath()%>/resources/commons/libs/garam-admin-template/1.3.5/dist/css/bootstrap.min.css" />
-<link rel="stylesheet" href="<%=request.getContextPath()%>/resources/commons/libs/garam-admin-template/1.3.5/dist/css/font-awesome.min.css" />
+<link rel="stylesheet" href="<%=request.getContextPath()%>/resources/common/libs/garam-admin-template/1.3.5/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" href="<%=request.getContextPath()%>/resources/common/libs/garam-admin-template/1.3.5/dist/css/font-awesome.min.css" />
 		
 <!-- page specific plugin styles start -->
-<link rel="stylesheet" href="<%=request.getContextPath()%>/resources/commons/libs/dhtmlwindow/1.1/dhtmlwindow.css" type="text/css" />	<!-- DHTML Window Widget v1.1 -->
-<link rel="stylesheet" href="<%=request.getContextPath()%>/resources/commons/libs/dhtmlmodal/1.1/modal.css" type="text/css" />			<!-- DHTML Modal window v1.1 -->
-<link rel="stylesheet" href="<%=request.getContextPath()%>/resources/commons/libs/garam-admin-template/1.3.5/dist/css/jquery-ui.min.css" />		<!-- jQuery UI v1.11.4 -->
-<link rel="stylesheet" href="<%=request.getContextPath()%>/resources/commons/libs/jquery-qtip2/2.2.1/jquery.qtip.min.css">				<!-- jQuery qTip2 v2.2.1 -->
-<link rel="stylesheet" href="<%=request.getContextPath()%>/resources/commons/libs/garam-admin-template/1.3.5/dist/css/bootstrap-datepicker3.min.css" />
-<link rel="stylesheet" href="<%=request.getContextPath()%>/resources/commons/libs/garam-admin-template/1.3.5/dist/css/ui.jqgrid.min.css" />		<!-- jQuery jqGrid -->
+<link rel="stylesheet" href="<%=request.getContextPath()%>/resources/common/libs/dhtmlwindow/1.1/dhtmlwindow.css" type="text/css" />	<!-- DHTML Window Widget v1.1 -->
+<link rel="stylesheet" href="<%=request.getContextPath()%>/resources/common/libs/dhtmlmodal/1.1/modal.css" type="text/css" />			<!-- DHTML Modal window v1.1 -->
+<link rel="stylesheet" href="<%=request.getContextPath()%>/resources/common/libs/garam-admin-template/1.3.5/dist/css/jquery-ui.min.css" />		<!-- jQuery UI v1.11.4 -->
+<link rel="stylesheet" href="<%=request.getContextPath()%>/resources/common/libs/jquery-qtip2/2.2.1/jquery.qtip.min.css">				<!-- jQuery qTip2 v2.2.1 -->
+<link rel="stylesheet" href="<%=request.getContextPath()%>/resources/common/libs/garam-admin-template/1.3.5/dist/css/bootstrap-datepicker3.min.css" />
+<link rel="stylesheet" href="<%=request.getContextPath()%>/resources/common/libs/garam-admin-template/1.3.5/dist/css/ui.jqgrid.min.css" />		<!-- jQuery jqGrid -->
 
 <!-- page specific plugin styles end -->
 
 <!-- text fonts -->
-<link rel="stylesheet" href="<%=request.getContextPath()%>/resources/commons/libs/garam-admin-template/1.3.5/dist/css/garam-fonts.min.css" />
+<link rel="stylesheet" href="<%=request.getContextPath()%>/resources/common/libs/garam-admin-template/1.3.5/dist/css/garam-fonts.min.css" />
 
 <!-- ace styles -->
-<link rel="stylesheet" href="<%=request.getContextPath()%>/resources/commons/libs/garam-admin-template/1.3.5/dist/css/garam.min.css" class="ace-main-stylesheet" id="main-ace-style" />
-<link rel="stylesheet" href="<%=request.getContextPath()%>/resources/commons/css/adminLTE.css" />
+<link rel="stylesheet" href="<%=request.getContextPath()%>/resources/common/libs/garam-admin-template/1.3.5/dist/css/garam.min.css" class="ace-main-stylesheet" id="main-ace-style" />
+<link rel="stylesheet" href="<%=request.getContextPath()%>/resources/common/css/adminLTE.css" />
 
 <!--[if lte IE 9]>
-<link rel="stylesheet" href="<%=request.getContextPath()%>/resources/commons/libs/garam-admin-template/1.3.5/dist/css/garam-part2.min.css" class="ace-main-stylesheet" />
+<link rel="stylesheet" href="<%=request.getContextPath()%>/resources/common/libs/garam-admin-template/1.3.5/dist/css/garam-part2.min.css" class="ace-main-stylesheet" />
 <![endif]-->
 
 <!--[if lte IE 9]>
-<link rel="stylesheet" href="<%=request.getContextPath()%>/resources/commons/libs/garam-admin-template/1.3.5/dist/css/garam-ie.min.css" />
+<link rel="stylesheet" href="<%=request.getContextPath()%>/resources/common/libs/garam-admin-template/1.3.5/dist/css/garam-ie.min.css" />
 <![endif]-->
 
 <!-- inline styles related to this page start -->
-<link rel="stylesheet" href="<%=request.getContextPath()%>/resources/commons/css/garam.garam.css" />
+<link rel="stylesheet" href="<%=request.getContextPath()%>/resources/common/css/garam.garam.css" />
 
 <!-- inline styles related to this page end -->
 
 <!-- ace settings handler -->
-<script src="<%=request.getContextPath()%>/resources/commons/libs/garam-admin-template/1.3.5/dist/js/garam-extra.min.js"></script>
+<script src="<%=request.getContextPath()%>/resources/common/libs/garam-admin-template/1.3.5/dist/js/garam-extra.min.js"></script>
 
 <!-- HTML5shiv and Respond.js for IE8 to support HTML5 elements and media queries -->
 
 <!--[if lte IE 8]>
-<script src="<%=request.getContextPath()%>/resources/commons/libs/garam-admin-template/1.3.5/dist/js/html5shiv.js"></script>
-<script src="<%=request.getContextPath()%>/resources/commons/libs/garam-admin-template/1.3.5/dist/js/respond.js"></script>
+<script src="<%=request.getContextPath()%>/resources/common/libs/garam-admin-template/1.3.5/dist/js/html5shiv.js"></script>
+<script src="<%=request.getContextPath()%>/resources/common/libs/garam-admin-template/1.3.5/dist/js/respond.js"></script>
 <![endif]-->
 
 
 <!-- basic scripts -->
 
 <!--[if !IE]> -->
-<script src="<%=request.getContextPath()%>/resources/commons/libs/garam-admin-template/1.3.5/dist/js/jquery.min.js"></script>
+<script src="<%=request.getContextPath()%>/resources/common/libs/garam-admin-template/1.3.5/dist/js/jquery.min.js"></script>
 <!-- <![endif]-->
 
 <!--[if IE]>
-<script src="<%=request.getContextPath()%>/resources/commons/libs/garam-admin-template/1.3.5/dist/js/jquery1x.min.js"></script>
+<script src="<%=request.getContextPath()%>/resources/common/libs/garam-admin-template/1.3.5/dist/js/jquery1x.min.js"></script>
 <![endif]-->
 <script type="text/javascript">
 	var _console = window.console;
-	if('ontouchstart' in document.documentElement) document.write("<script src='<%=request.getContextPath()%>/resources/commons/libs/garam-admin-template/1.3.5/dist/js/jquery.mobile.custom.min.js'>"+"<"+"/script>");
+	if('ontouchstart' in document.documentElement) document.write("<script src='<%=request.getContextPath()%>/resources/common/libs/garam-admin-template/1.3.5/dist/js/jquery.mobile.custom.min.js'>"+"<"+"/script>");
 </script>
-<script src="<%=request.getContextPath()%>/resources/commons/libs/garam-admin-template/1.3.5/dist/js/bootstrap.min.js"></script>
+<script src="<%=request.getContextPath()%>/resources/common/libs/garam-admin-template/1.3.5/dist/js/bootstrap.min.js"></script>
 
 <!-- page specific plugin scripts start -->
-<script src="<%=request.getContextPath()%>/resources/commons/libs/dhtmlwindow/1.1/dhtmlwindow.js"></script>								<!-- DHTML Window Widget v1.1 -->
-<script src="<%=request.getContextPath()%>/resources/commons/libs/dhtmlmodal/1.1/modal.js"></script>									<!-- DHTML Modal window v1.1  -->
-<script src="<%=request.getContextPath()%>/resources/commons/libs/garam-admin-template/1.3.5/dist/js/jquery-ui.min.js"></script>					<!-- jQuery UI v1.11.4 -->
-<script src="<%=request.getContextPath()%>/resources/commons/libs/garam-admin-template/1.3.5/dist/js/jquery.ui.touch-punch.min.js"></script>		<!-- jQuery UI Touch Punch v0.2.3 -->
-<script src="<%=request.getContextPath()%>/resources/commons/libs/garam-admin-template/1.3.5/dist/js/bootbox.min.js"></script>						<!-- bootbox.js v4.3.0 -->
-<script src="<%=request.getContextPath()%>/resources/commons/libs/jquery-cookie/jquery.cookie.js"></script>				<!-- jQuery Cookie Pligin -->
-<!-- <script src="<%=request.getContextPath()%>/resources/commons/jquery/plugins/jquery.validate.js"></script>								jQuery Validation v1.8.1 -->
-<!-- <script src="<%=request.getContextPath()%>/resources/commons/libs/jquery-validation/jquery.validate.defaults.js"></script>				jQuery Validation defaults -->
-<script src="<%=request.getContextPath()%>/resources/commons/libs/jquery-validation/1.15.0/jquery.validate.js"></script>				<!-- jQuery Validation defaults --> 
-<script src="<%=request.getContextPath()%>/resources/commons/libs/jquery-validation/jquery.validate.defaults.js"></script>				
-<script src="<%=request.getContextPath()%>/resources/commons/libs/jquery-qtip2/2.2.1/jquery.qtip.min.js"></script>						<!-- jQuery qTip2 v2.2.1 -->
-<script src="<%=request.getContextPath()%>/resources/commons/jquery/plugins/BlockUI/jquery.blockUI.js"></script>						<!-- jQuery blockUI v2.63 -->
-<script src="<%=request.getContextPath()%>/resources/commons/libs/garam-admin-template/1.3.5/dist/js/date-time/bootstrap-datepicker.min.js"></script>
-<script src="<%=request.getContextPath()%>/resources/commons/libs/garam-admin-template/1.3.5/dist/js/date-time/locales/bootstrap-datepicker.kr.js"></script>
-<script src="<%=request.getContextPath()%>/resources/commons/libs/garam-admin-template/1.3.5/dist/js/jqGrid/jquery.jqGrid.min.js"></script>		<!-- jQuery jqGrid JS v5.0.1 -->
-<script src="<%=request.getContextPath()%>/resources/commons/libs/garam-admin-template/1.3.5/dist/js/jqGrid/i18n/grid.locale-en.js"></script>	<!-- jQuery jqGrid English Translation -->
+<script src="<%=request.getContextPath()%>/resources/common/libs/dhtmlwindow/1.1/dhtmlwindow.js"></script>								<!-- DHTML Window Widget v1.1 -->
+<script src="<%=request.getContextPath()%>/resources/common/libs/dhtmlmodal/1.1/modal.js"></script>									<!-- DHTML Modal window v1.1  -->
+<script src="<%=request.getContextPath()%>/resources/common/libs/garam-admin-template/1.3.5/dist/js/jquery-ui.min.js"></script>					<!-- jQuery UI v1.11.4 -->
+<script src="<%=request.getContextPath()%>/resources/common/libs/garam-admin-template/1.3.5/dist/js/jquery.ui.touch-punch.min.js"></script>		<!-- jQuery UI Touch Punch v0.2.3 -->
+<script src="<%=request.getContextPath()%>/resources/common/libs/garam-admin-template/1.3.5/dist/js/bootbox.min.js"></script>						<!-- bootbox.js v4.3.0 -->
+<script src="<%=request.getContextPath()%>/resources/common/libs/jquery-cookie/jquery.cookie.js"></script>				<!-- jQuery Cookie Pligin -->
+<!-- <script src="<%=request.getContextPath()%>/resources/common/jquery/plugins/jquery.validate.js"></script>								jQuery Validation v1.8.1 -->
+<!-- <script src="<%=request.getContextPath()%>/resources/common/libs/jquery-validation/jquery.validate.defaults.js"></script>				jQuery Validation defaults -->
+<script src="<%=request.getContextPath()%>/resources/common/libs/jquery-validation/1.15.0/jquery.validate.js"></script>				<!-- jQuery Validation defaults --> 
+<script src="<%=request.getContextPath()%>/resources/common/libs/jquery-validation/jquery.validate.defaults.js"></script>				
+<script src="<%=request.getContextPath()%>/resources/common/libs/jquery-qtip2/2.2.1/jquery.qtip.min.js"></script>						<!-- jQuery qTip2 v2.2.1 -->
+<script src="<%=request.getContextPath()%>/resources/common/jquery/plugins/BlockUI/jquery.blockUI.js"></script>						<!-- jQuery blockUI v2.63 -->
+<script src="<%=request.getContextPath()%>/resources/common/libs/garam-admin-template/1.3.5/dist/js/date-time/bootstrap-datepicker.min.js"></script>
+<script src="<%=request.getContextPath()%>/resources/common/libs/garam-admin-template/1.3.5/dist/js/date-time/locales/bootstrap-datepicker.kr.js"></script>
+<script src="<%=request.getContextPath()%>/resources/common/libs/garam-admin-template/1.3.5/dist/js/jqGrid/jquery.jqGrid.min.js"></script>		<!-- jQuery jqGrid JS v5.0.1 -->
+<script src="<%=request.getContextPath()%>/resources/common/libs/garam-admin-template/1.3.5/dist/js/jqGrid/i18n/grid.locale-en.js"></script>	<!-- jQuery jqGrid English Translation -->
 
 <!-- page specific plugin scripts end -->
 
 <!-- ace scripts -->
-<script src="<%=request.getContextPath()%>/resources/commons/libs/garam-admin-template/1.3.5/dist/js/garam-elements.min.js"></script>
-<script src="<%=request.getContextPath()%>/resources/commons/libs/garam-admin-template/1.3.5/dist/js/garam.min.js"></script>
+<script src="<%=request.getContextPath()%>/resources/common/libs/garam-admin-template/1.3.5/dist/js/garam-elements.min.js"></script>
+<script src="<%=request.getContextPath()%>/resources/common/libs/garam-admin-template/1.3.5/dist/js/garam.min.js"></script>
 
 <!-- inline scripts related to this page start -->
-<script src="<%=request.getContextPath()%>/resources/commons/scripts/common.js"></script>
-<script src="<%=request.getContextPath()%>/resources/commons/scripts/organization_selector.js"></script>
-<script src="<%=request.getContextPath()%>/resources/commons/scripts/garam.garam.js"></script>
-<script src="<%=request.getContextPath()%>/resources/commons/scripts/parent.reload.js"></script>
+<script src="<%=request.getContextPath()%>/resources/common/scripts/common.js"></script>
+<script src="<%=request.getContextPath()%>/resources/common/scripts/organization_selector.js"></script>
+<script src="<%=request.getContextPath()%>/resources/common/scripts/garam.garam.js"></script>
+<script src="<%=request.getContextPath()%>/resources/common/scripts/parent.reload.js"></script>
 </head>
 
 <body class="no-skin formBody">
@@ -131,7 +131,7 @@ body {
 			</li>
 		</ul>
 		<span class="breadcrumb-Info">
-				<img src="<%=request.getContextPath()%>/resources/commons/images/pp.gif" border="0" align="absmiddle">
+				<img src="<%=request.getContextPath()%>/resources/common/images/pp.gif" border="0" align="absmiddle">
 				<a href="javascript:ShowUserInfo('20180117182355');" class="maninfo">				
 					${loginUser.id } / 정보시스템</a> <fmt:formatDate value="<%=new Date() %>" pattern="( yyyy-MM-dd HH:mm:ss)"/>
 		</span>
@@ -269,30 +269,30 @@ body {
 
 </div>
 	
-<!-- /WEB-INF<%=request.getContextPath()%>/resources/commons/file_upload_control.jsp -->
+<!-- /WEB-INF<%=request.getContextPath()%>/resources/common/file_upload_control.jsp -->
 
 
-<link rel="stylesheet" href="<%=request.getContextPath()%>/resources/commons/libs/jquery-ui-file-upload/css/jquery.fileupload-ui.css" />
-<link rel="stylesheet" href="<%=request.getContextPath()%>/resources/commons/css/fileupload.css" />
+<link rel="stylesheet" href="<%=request.getContextPath()%>/resources/common/libs/jquery-ui-file-upload/css/jquery.fileupload-ui.css" />
+<link rel="stylesheet" href="<%=request.getContextPath()%>/resources/common/css/fileupload.css" />
 
 <!-- Shim to make HTML5 elements usable in older Internet Explorer versions -->
-<!--[if lt IE 9]><script src="<%=request.getContextPath()%>/resources/commons/libs/html5shim/html5shiv.min.js"></script><![endif]-->
+<!--[if lt IE 9]><script src="<%=request.getContextPath()%>/resources/common/libs/html5shim/html5shiv.min.js"></script><![endif]-->
 
-<!-- <script src="<%=request.getContextPath()%>/resources/commons/jquery/js/jquery-1.8.0.min.js"></script> -->
-<!-- <script src="<%=request.getContextPath()%>/resources/commons/jquery/ui/1.8.16/jquery-ui.min.js"></script> -->
+<!-- <script src="<%=request.getContextPath()%>/resources/common/jquery/js/jquery-1.8.0.min.js"></script> -->
+<!-- <script src="<%=request.getContextPath()%>/resources/common/jquery/ui/1.8.16/jquery-ui.min.js"></script> -->
 
-<script src="<%=request.getContextPath()%>/resources/commons/libs/javascript-templates/tmpl.min.js"></script>
+<script src="<%=request.getContextPath()%>/resources/common/libs/javascript-templates/tmpl.min.js"></script>
 
-<script src="<%=request.getContextPath()%>/resources/commons/libs/jquery-ui-file-upload/js/jquery.iframe-transport.js"></script>
-<script src="<%=request.getContextPath()%>/resources/commons/libs/jquery-ui-file-upload/js/jquery.fileupload.js"></script>
-<script src="<%=request.getContextPath()%>/resources/commons/libs/jquery-ui-file-upload/js/jquery.fileupload-fp.js"></script>
-<script src="<%=request.getContextPath()%>/resources/commons/libs/jquery-ui-file-upload/js/jquery.fileupload-ui.js"></script>
-<script src="<%=request.getContextPath()%>/resources/commons/libs/jquery-ui-file-upload/js/jquery.fileupload-jui.js"></script>
-<script src="<%=request.getContextPath()%>/resources/commons/libs/jquery-ui-file-upload/js/locale.js"></script>
-<script src="<%=request.getContextPath()%>/resources/commons/scripts/fileupload.js"></script>
+<script src="<%=request.getContextPath()%>/resources/common/libs/jquery-ui-file-upload/js/jquery.iframe-transport.js"></script>
+<script src="<%=request.getContextPath()%>/resources/common/libs/jquery-ui-file-upload/js/jquery.fileupload.js"></script>
+<script src="<%=request.getContextPath()%>/resources/common/libs/jquery-ui-file-upload/js/jquery.fileupload-fp.js"></script>
+<script src="<%=request.getContextPath()%>/resources/common/libs/jquery-ui-file-upload/js/jquery.fileupload-ui.js"></script>
+<script src="<%=request.getContextPath()%>/resources/common/libs/jquery-ui-file-upload/js/jquery.fileupload-jui.js"></script>
+<script src="<%=request.getContextPath()%>/resources/common/libs/jquery-ui-file-upload/js/locale.js"></script>
+<script src="<%=request.getContextPath()%>/resources/common/scripts/fileupload.js"></script>
 
 <!-- The XDomainRequest Transport is included for cross-domain file deletion for IE8+ -->
-<!--[if gte IE 8]><script src="<%=request.getContextPath()%>/resources/commons/libs/jquery-ui-file-upload/js/cors/jquery.xdr-transport.js"></script><![endif]-->
+<!--[if gte IE 8]><script src="<%=request.getContextPath()%>/resources/common/libs/jquery-ui-file-upload/js/cors/jquery.xdr-transport.js"></script><![endif]-->
 
 <%@ include file="./regist_file.jsp" %>	
 	

@@ -237,7 +237,7 @@ div#pg_grid-pager.ui-pager-control { height: 33px; } /* 그리드 풋더 높이 
 
 .ui-jqgrid .loading {	/* loading image */
 	z-index:150;
-	background: #fff url('/common/jquery/css/validate/loading.gif') no-repeat;
+	background: #fff url('/resources/common/jquery/css/validate/loading.gif') no-repeat;
     padding-left: 29px;
     background-position: 5% 45%;
 }
