@@ -1,0 +1,496 @@
+
+@media only screen and (min-width: 768px) {
+.navbar.h-navbar {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+.sidebar.h-sidebar:before {
+    top: 0px;
+    border-bottom: 0px solid;
+    border-bottom-color: inherit;
+}
+
+}
+
+.dropdown-colorpicker > .dropdown-menu {
+    min-width: 110px;
+    max-width: 110px;
+}
+
+/* .no-skin .navbar { background: #2c6aa0; } */
+.no-skin .navbar { background: #5a84b5; }
+body.skin-3.no-skin > div#navbar { background: #404040; }
+
+.ace-settings-box.open {   overflow: visible; widthsss: 250px;     padding: 0 14px 7px;}
+    
+.sidebar.h-sidebar .nav-list > li > a { padding: 8px }	/* 상단메뉴 여백 */
+
+/* .nav-list > li > a { */
+/*     font-weight: bold; */
+/* } */
+
+.ace-nav > li.blue > a {
+    background-color: #428bca;
+}
+.ace-nav > li.blue > a:hover, .ace-nav > li.blue > a:focus, .ace-nav > li.open.blue > a {
+    background-color: #428bca;
+}
+.ace-nav .nav-user-photo {margin: -4px 0px 0 0;}
+
+/* .no-skin .nav-list > li > a { */
+/*     color: #585858; */
+/*     font-weight: bold; */
+/* } */
+
+div#inbox_tree_area.tree_area{overflow:hidden;}
+span.dynatree-node.badge {
+    position: absolute;
+    left: 150px;
+}
+
+.clock {color:#fff; text-align:center; position: relative; top: 2px;}
+#Date { font-family:'BebasNeueRegular', Arial, Helvetica, sans-serif; sfont-size:12px; text-align:centers; text-shadow:0 0 5px #fff; position: relative; top: 0px; line-height:15px; }
+
+div.clock ul { widths:292px; margin:0 auto; padding:0px; list-style:none; text-align:center; position: relative; stop: -7px; line-height:15px;}
+div.clock ul li { display:inline; font-size:1.5em; text-align:center; font-family:'BebasNeueRegular', Arial, Helvetica, sans-serif; text-shadow:0 0 5px #fff; }
+
+#point { position:relative; -moz-animation:mymove 1s ease infinite; -webkit-animation:mymove 1s ease infinite; spadding-left:10px; spadding-right:10px; }
+
+/* @-webkit-keyframes mymove  */
+/* { */
+/* 0% {opacity:1.0; text-shadow:0 0 20px #00c6ff;} */
+/* 50% {opacity:0; text-shadow:none; } */
+/* 100% {opacity:1.0; text-shadow:0 0 20px #00c6ff; }	 */
+/* } */
+
+
+/* @-moz-keyframes mymove  */
+/* { */
+/* 0% {opacity:1.0; text-shadow:0 0 20px #00c6ff;} */
+/* 50% {opacity:0; text-shadow:none; } */
+/* 100% {opacity:1.0; text-shadow:0 0 20px #00c6ff; }	 */
+/* } */
+
+/* @media (max-width: 360px) */
+/* .clock-info { */
+/*     display: none; */
+/* } */
+
+
+/* 570px 이하인 경우, 회사 로고 숨김.*/
+@media only screen and (max-width: 570px) {
+	a.navbar-brand { zoom:75%;  padding:10px 0px 10px 5px !important;}
+	.clock { display:none; }
+}
+
+/* 767px 이하인 경우, 아이콘 숨김 처리 등.*/
+@media only screen and (max-width: 767px) {
+
+/* .clock-info { */
+/* 	display:none;  */
+/* } */
+
+/* a.navbar-brand { */
+/*     display: none; */
+/* } */
+
+#people-info, #site-map, #favorite-tool, #notice-tool {
+	display: none;
+}
+.navbar.navbar-collapse .navbar-buttons>.ace-nav {
+	float: right !important;
+}
+.navbar.navbar-collapse .navbar-header {
+    float: left !important;
+}
+
+.navbar-buttons.navbar-header.pull-right {
+	display: contents !important;
+}
+
+.infobox {
+ min-width: inherit;
+}
+
+}
+/* 좌측 트리메뉴 : skin에 따른 폰트컬러 설정 */
+body.skin-1 span.dynatree-node a { color: #fff; }
+body.skin-1 ul.dynatree-container a:hover { background: transparent; border-color: #B8D6FB; }
+body.skin-2 span.dynatree-node a { color: #fff; }
+body.skin-2 ul.dynatree-container a:hover { background: transparent; border-color: #B8D6FB; }
+
+
+
+
+
+
+
+
+
+.main-style .row { margin-left: 8px; margin-right: 8px; }
+
+.main-style h5.widget-title { font-size:13px;}	/* 위젯 타이틀 */
+.main-style .ui-tabs .ui-tabs-panel { padding: 4px 0px 1px 0px; }	/* 위젯 탭 여백 수정 */
+.main-style .widget-no-tab .widget-main.no-padding { /*border: 1px solid #C5D0DC; margin-top: 4px;*/ margin-bottom: 2px; }
+/* .main-style .widget-no-tab .widget-main.no-padding .table { margin-top: 4px; } */
+.main-style .widget-main .table > tbody > tr > td {
+    padding: 8px 3px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    color: #555;
+}
+
+/* .main-style .widget-box:hover { */
+/* 	box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1), 0 4px 8px 0 rgba(0,0,0,0.5); */
+/* 	border : 1px solid #6fb3e0; */
+/* } */
+
+.main-style .datepicker-inline { width: 100%; }
+
+.main-style .clock { float:left; width:93px; height:19px; margin:2px 1px 0px 5px; padding:1px 0px 0px 4px; border:1px solid #dfdfdf; background-color:#efefef; }
+.main-style #Date { font-family:'BebasNeueRegular', Arial, Helvetica, sans-serif; font-size:36px; text-align:center; text-shadow:0 0 5px #00c6ff; }
+
+.main-style .clock ul { margin:0 auto; padding:0px; list-style:none; text-align:center; }
+.main-style .clock ul li { line-height: 150%; display:inline; font-size:0.9em; font-weight:bold; text-align:center; font-family:'tahoma', Arial, Helvetica, sans-serif; colors:#3072b3; text-shadow:1px 1px 0 #bbb; /*text-shadows:-1px -1px 0 rgba(0,0,0,0.3);*/ margin:0px; float:left;}
+
+.main-style .btn.btn-app.btn-xs {
+    width: 23.88888%;
+    font-size: 12px;
+    margin: 1px;
+}
+
+.main-style .panel {
+	height: 127px;
+    border: 0px !important;
+	margin-top: 2px;
+    margin-bottom: 0px;
+}
+
+/* main contents default style */
+.main-style #aps tr {height:24px; border-bottom:1px dotted #ddd;} 
+.main-style #aps td {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.main-style .widget-toolbox.padding-8 {padding: 0px;}
+.main-style .ui-tabs .ui-tabs-panel {border: 1px solid #fff; }
+.main-style .widget-body { padding: 2px 5px 5px 5px; position: relative;  min-height: 80px; max-height: inherit; }
+.main-style .widget-container-col { padding-left:7px; padding-right:5px;}
+.main-style .widget-box {margin-bottom: 10px;}
+.main-style .widget-header {color: #555;}
+.main-style h5.widget-title {font-weight:bold;}
+
+.weatherItem { height: 150px !important; width: 24.33333% !important; margin: 1px 1px 1px 0px !important; }
+
+/* .main-style a { */
+/*     color: #777; */
+/*     text-decoration: none; */
+/* } */
+
+/* .main-style a:hover, */
+/* .main-style a:focus { */
+/*     color: #333; */
+/*     text-decoration: none; */
+/* } */
+
+/* main widget 조정 */
+/* .main-style .widget-box { border: 1px solid #ddd; border-radius: 2px;} */
+
+.w-blank {
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.w-header {
+    background-color: #fff !important;
+    border-color: #eee !important;
+}
+
+/* 포탈 화면 중 우측의 경우, 선을 없앰 */
+div#widget-container-3 .widget-box {
+	box-shadow: none !important;
+	border: none !important;
+}
+
+div#widget-container-3 .widget-header {
+	background-color: #fff !important;
+	border-color: #eee !important;
+}
+
+div#my-widget-5 i.ace-icon.fa.fa-rss {
+	font-size: 140% !important;
+	color: coral;
+}
+/* div#my-widget-6 i.ace-icon.fa.fa-comments { */
+/* 	font-size: 140% !important; */
+/* 	color: coral; */
+/* } */
+div#my-widget-37 i.ace-icon.fa.fa-bars {
+	font-size: 140% !important;
+	color: coral;
+}
+
+div#my-widget-38 i.ace-icon.fa.fa-coffee {
+	font-size: 140% !important;
+	color: coral;
+}
+
+div#my-widget-39 i.ace-icon.fa.fa-ship {
+	font-size: 140% !important;
+	color: coral;
+}
+
+.main-style .widget-box { 
+    border: 1px solid #eee;
+    border-radius: 3px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05) !important;
+    display: inline-block;
+    width: 100%;
+}
+
+div.widget-box div#A20180510144105343.widget-body {
+	min-height: 180px;
+}
+
+.main-style .widget-header-flat {
+/*     background-color: #d9edf7; */
+    border-color: #fff;
+/*     color: #31708f; */
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+}
+
+.main-style .widget-flat-green {
+/* background-color: #dff0d8; */
+/*     border-color: #d6e9c6; */
+/*     color: #3c763d; */
+}
+
+.main-style .widget-flat-yellow {
+background-color: #fcf8e3;
+    border-color: #faebcc;
+    color: #8a6d3b;
+}
+.main-style .widget-flat-red {
+background-color: #f2dede;
+    border-color: #ebccd1;
+    color: #a94442;
+}
+/* main widget 조정 */
+
+/* main calendar padding 조정 */
+.main-style .table-condensed > thead > tr > th,
+.main-style .table-condensed > tbody > tr > th,
+.main-style .table-condensed > tfoot > tr > th,
+.main-style .table-condensed > thead > tr > td,
+.main-style .table-condensed > tbody > tr > td,
+.main-style .table-condensed > tfoot > tr > td {
+    padding: 0px;
+}
+.main-style table.table-condensed {width:100%;}		/*calendar width = 100% */
+.main-style .datepicker td,
+.main-style .datepicker th { min-width: 20px; }
+
+
+/* main 상단 count widget 조정 : fire fox에서 해당 style 문제있음. */
+.main-style .infobox { width:32.3%; height:93px; padding:6px 3px 6px 4px; white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+	border-radius: 3px;
+/* 	background: #f9f9f9; */
+/* 	margin:2px 1px 0px 0px; */
+	border: 0px;
+	text-align: center;
+}
+
+.infobox .infobox-content {
+    max-width: none;
+}
+
+.main-style .infobox > .infobox-data {
+    display: block;
+    min-width: 100%;
+    line-height: 15px;
+    padding-left: 0px;
+    margin-top: 3px;
+    font-size:12px;
+    text-align: center;
+}
+
+.main-style .infobox > .infobox-data > .infobox-data-number { font-size: 16px; }
+
+.infobox-blue2>.infobox-icon>.ace-icon {
+    background-color: #8eaec9;
+}
+.infobox-purple>.infobox-icon>.ace-icon {
+    background-color: #af9ecb;
+}
+.infobox-green>.infobox-icon>.ace-icon {
+    background-color: #b4c18e;
+}
+.infobox-red>.infobox-icon>.ace-icon {
+    background-color: #d7a3a4;
+}
+.infobox-orange2>.infobox-icon>.ace-icon {
+    background-color: #f5cab6;
+}
+.infobox-black>.infobox-icon>.ace-icon {
+    background-color: #b2b2b2;
+}
+
+
+/*firefox only hack : Fire-Fox에서 보이지 않는 문제 : 2016-05-26 jkkim */
+@-moz-document url-prefix() { 
+	.infobox { width:32.6%; height:62px; max-width: 32.6%; }
+	.infobox > .infobox-data { min-width: 45%; }  
+}
+ 
+.main-style .progress {margin-bottom: 13px;}
+.main-style .spaced > li { margin-top: 3px; }
+
+/* 문서관리 트리색상 배경 */
+.skin-1 span.dynatree-active a {
+	border: 1px solid #99DEFD; background-color: #777 !important;
+}
+.skin-2 span.dynatree-active a {
+	border: 1px solid #99DEFD; background-color: #777 !important;
+}
+
+/* 메인화면 일정 위젯 캘린더 높이 조절 */
+.main-style #sche_datepicker .datepicker table tr td,
+.main-style #sche_datepicker .datepicker table tr th { height: 29px; }
+
+.table-striped>tbody>tr:nth-of-type(odd) {
+    background-color: #fff;
+}
+
+.table-bordered, .table-bordered>tbody>tr>td, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>td, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>thead>tr>th {
+    border: 1px dotted #f2f2f2;
+    border-width: 0px 0px 1px 0px !important;
+}
+
+.widget-box>.widget-header>.widget-toolbar>.widget-menu>[data-action=reload], .widget-box>.widget-header>.widget-toolbar>[data-action=reload], .widget-color-dark>.widget-header>.widget-toolbar>.widget-menu>[data-action=reload], .widget-color-dark>.widget-header>.widget-toolbar>[data-action=reload] {
+    color: #999;
+}
+
+.no-skin div.page-content.main-content {background:#fdfdfd;}
+
+.skin-3.no-skin .page-content {
+    background-color: #fff; !important; 
+}
+
+body.skin-3.no-skin > .page-content.main-content {background-color: #fff;}
+
+/* 게시판 탭 컨텐츠 ui-tabs-panel 상단 줄맞춤 */
+div#ui-id-10 {padding-top:0px;}
+
+/* 퀵 메뉴 스타일  */
+.q-menu-span {
+	width: 100%;
+	white-space: normal;
+	word-break: break-all;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	display: inline-block;
+	line-height: 12px;
+	padding: 3px 1px;
+	font-size: 11px;
+	height: 26px;
+}
+
+.dow {
+    background: #428bca;
+    color: #fff;
+}
+
+.bx-viewport {border-radius: 3px;}
+
+.ace-nav>li {
+    border-left: none;
+}
+
+div#my-widget-37 > a.btn.btn-app.btn-primary.btn-xs.no-radius {
+/*     background: #627b87 !important; */
+/*     background: #249486 !important; */
+/*     background: #cbd65d !important; */
+    /* background: #fdbb49 !important; */
+    background: #5b84b1 !important;
+    /* background: #8db88c !important; */
+}
+
+.widget-no-data {
+    height: 170px;
+    padding-top: 85px;
+}
+
+.table-condensed > tbody {
+	background: #eef5f9ab;
+}
+.table-condensed > tbody {
+	background: #cfe9fa6b;
+	color: #666;
+}
+
+.datepicker table tr td.today {
+    color: #fff;
+    font-weight: bold;
+    background-color: #428bca;
+    border-color: #ffb733;
+}
+a.actionMore, a.actionRefresh {
+	font-size: 12px;
+}
+.widget-toolbar:before {
+    border: 1px solid #e7e7e7;
+    border-width: 0 1px 0 0;
+}
+
+/* 좌측 하단 즐겨찾기 관련 style */
+.dd-empty, .dd-item, .dd-placeholder {
+    min-width: 49%;
+    max-width: 49%;
+    float: left;
+    margin-right: 1px;
+    margin-left: 1px;
+}
+
+.dd-handle, .dd2-content { 
+	margin: 1px 0;
+	border-radius: 3px !important;
+}
+
+div#sidebar2 .nav-list>li>a>.menu-icon {
+    min-width: 20px;
+    margin-right: 2px;
+    font-size: 120%;
+	position: relative;
+	top: -2px !important;
+}
+
+div#sidebar2 .no-skin .nav-list>li>a {
+    background-color: #531616 !important;
+    color: #585858 !important;
+}
+
+div#top-color ul.dropdown-menu.dropdown-caret {
+	top: -2px;
+    left: -1px;
+    display: inherit;
+}
+
+/* project sidebar2 menu style */
+li.projModuleIntro a {
+    background: #E3F2FD !important;
+    font-weight: bold;
+    color: #428bca !important;
+    /* font-size: 14px; */
+    border-top: 2px solid #428bca;
+}
+
+li.projModuleMenu a {
+    border-left: 2px solid #428bca;
+}

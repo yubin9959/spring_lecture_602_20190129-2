@@ -1,0 +1,21 @@
+.upload table { border-collapse: collapse; border-left: 1px solid #ccc; border-top: 1px solid #ccc; color: #333; }
+.upload table thead tr th { /*text-transform: uppercase;*/ background: #e2e2e2; border-right: 1px solid #ccc; border-bottom: 1px solid #ccc; text-align:center; }
+.upload table td { border-right: 1px solid #ccc; border-bottom: 1px solid #ccc; padding: 10px; }
+.upload table th { height:25px; }
+.upload td.name {font-weight:bold; text-align:left;}
+.upload td.cancel, 
+.upload td.delete, 
+.upload td.download { text-align: center; padding:0px 5px;}
+.upload td.size { text-align: right; }
+.upload div.fileupload-buttonbar { padding: 4px; text-align: right; }
+.upload .hide { display: none; }
+.upload td.delete { width:20px;}
+.upload td.download { width:110px;}
+.upload td.size { width:85px;}
+
+/* .upload td.name a { */
+/* 	background-image: url(/common/images/icons/ico_file.gif); */
+/* 	background-repeat: no-repeat; */
+/* 	padding-left: 14px; */
+/* 	background-position: 0px 2px; */
+/* } */

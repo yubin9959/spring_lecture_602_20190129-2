@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	
+	<!-- dao -->
+	<bean id="memberDAO"
+	      class="com.spring.dao.MybatisMemberDAOImpl"
+	      p:session-ref="sqlSession"
+	      />
+	<bean id="attachDAO" 
+	      class="com.spring.dao.AttachDAOImpl"
+	      p:session-ref="sqlSession"
+	      />
+	      
+	<bean id="mybatisBoardDAO"
+	      class="com.spring.dao.MybatisBoardDAOImpl"
+	      p:session-ref="sqlSession"
+	      />
+	<bean id="pageMybatisBoardDAO"
+		  class="com.spring.dao.PageMybatisBoardDAOImpl"
+		  p:session-ref="sqlSession"
+		  p:instance-ref="mybatisBoardDAO"
+		  />
+	<bean id="pdsDAO"
+	      class="com.spring.dao.PdsDAOImpl"
+	      p:session-ref="sqlSession"
+	      />
+	<bean id="replyDAO"
+		  class="com.spring.dao.ReplyDAOImpl"
+		  p:session-ref="sqlSession"
+		  />
+	<bean id="noticeDAO"
+		  class="com.spring.dao.NoticeDAOImpl"
+		  p:session-ref="sqlSession"
+		  />	  
+	<bean id="noticeAttachDAO"
+		  class="com.spring.dao.NoticeAttachDAOImpl"
+		  p:session-ref="sqlSession"
+		  />
+		  
+		  
+	<!-- service -->
+	<bean id="boardService"
+	      class="com.spring.service.BoardServiceImpl"
+	      p:boardDAO-ref="pageMybatisBoardDAO"
+	      p:replyDAO-ref="replyDAO"
+	      />
+	<bean id="memberService"
+	      class="com.spring.service.MemberServiceImpl"
+	      p:memberDAO-ref="memberDAO"
+	      />
+	<bean id="pdsService"
+		  class="com.spring.service.PdsServiceImpl"
+		  p:attachDAO-ref="attachDAO"
+		  p:pdsDAO-ref="pdsDAO"
+		  />
+	<bean id="replyService"
+	      class="com.spring.service.ReplyServiceImpl"
+	      p:replyDAO-ref="replyDAO"
+	      />
+	<bean id="noticeService"
+	      class="com.spring.service.NoticeServiceImpl"
+	      p:noticeDAO-ref="noticeDAO"
+	      p:noticeAttachDAO-ref="noticeAttachDAO"
+	      />     
+	 
+</beans>
+
+
+
+
+
+
+
+
