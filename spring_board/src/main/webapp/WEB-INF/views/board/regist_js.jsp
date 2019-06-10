@@ -15,40 +15,7 @@ function validCheck(){
 }
 
 var fileFormData = new FormData();
-function fileUpload(dataForm,targetForm){
-	$.ajax({
-		url:"<%=request.getContextPath()%>/upload",
-		type:"post",
-		data:dataForm,
-		processData:false,
-		contentType:false,
-		success:function(data){
-		
-			var fileName="";
-			if(checkImageType(data)){
-				fileName=data.substring(14).split('$$')[1];
-				fileType="1";
-			}else{
-				fileName=data.substring(12).split('$$')[1];
-				fileType="0";
-			}
-			
-			var uploadPath=data.substring(0,12).replace(/\//g,"\\");
-						
-			var input1=$('<input>').attr('type','hidden')
-			   					   .attr('name','attachList['+i+'].fileName')
-			   					   .val(fileName);
-			var input2=$('<input>').attr('type','hidden')
-								   .attr('name','attachList['+i+'].fileType')
-								   .val(fileType);
-			var input3=$('<input>').attr('type','hidden')
-								   .attr('name','attachList['+i+'].uploadPath')
-								   .val(uploadPath);
-			
-			targetForm.append(input1).append(input2).append(input3);
-		}
-	}); 
-}
+var registForm = $('form#registForm');
 
 function docSubmit(){
 	var form = document.getElementById("registForm");
@@ -61,24 +28,76 @@ function docSubmit(){
 	$("#closeDate").removeAttr("disabled");
 	
 	
-	waitMsg();	/* Processing message */
+	//waitMsg();	/* Processing message */
 	
 	if ($('.template-upload') && $('.template-upload').length > 0) {
 		//$('#fileuploadstartconfirm').val(1);
 		$('.fileupload-buttonbar').find('.start').click();
 //		$('button[type=submit]').click();
 		//return false;
-	} else {			
+	} else {	
+		
+		//업로드된 파일 개수.
+		var index=0;
+
+		//업로드 되는 파일 개수 확인
+		var fileNum=0;
+
+		for(var i of fileFormData.values()){
+			fileNum++;
+		}		
+		
 		for(var value of fileFormData.values()){
 			
 			//file을 업로드하기 위한  formData()를 생성.
-			var dataFormData=new FormData();
-			dataFormData.append('file',value);			
-			//alert(value);			
-			fileUpload(dataFormData,form);
-		}
-		
-		controlSubmit(form);			
+			var dataForm=new FormData();
+			dataForm.append('file',value);		
+			
+			var loginUser_id="/${loginUser.id}";
+			$.ajax({
+				url:"<%=request.getContextPath()%>/upload",
+				type:"post",
+				data:dataForm,
+				processData:false,
+				contentType:false,
+				success:function(data){
+					var fileName="";
+					if(checkImageType(data)){
+						fileName=data.substring(14+loginUser_id.length).split('$$')[1];
+						fileType="1";
+					}else{
+						fileName=data.substring(12+loginUser_id.length).split('$$')[1];
+						fileType="0";
+					}
+					
+					var uploadPath=data.substring(0,12+loginUser_id.length).replace(/\//g,"\\");
+								
+					var input1=$('<input>').attr('type','hidden')
+					   					   .attr('name','attachList['+index+'].fileName')
+					   					   .val(fileName);
+					var input2=$('<input>').attr('type','hidden')
+										   .attr('name','attachList['+index+'].fileType')
+										   .val(fileType);
+					var input3=$('<input>').attr('type','hidden')
+										   .attr('name','attachList['+index+'].uploadPath')
+										   .val(uploadPath);
+					
+					registForm.prepend(input1).prepend(input2).prepend(input3);
+					index++;					
+				}
+				
+			}); 
+		}	
+		 
+		var submitTime=setInterval(function(e){
+			if(fileNum==index){
+				// ajax에 의한 파일업로드가 완료되면 submit을 진행한다.
+				controlSubmit(registForm);
+				
+				// 해당 setInterval을 종료.
+				clearInterval(submitTime);
+			}
+		},500);  
 	}
 	
 }
@@ -371,10 +390,9 @@ function getUploadFileInfo(fileName,imgsrc){
 		default:icon = "file";		
 		}		
 		
-		imgsrc="<%=request.getContextPath()%>/resources/commons/images/"+icon+".png";
+		imgsrc="<%=request.getContextPath()%>/resources/common/images/"+icon+".png";
 	}
-	
-	return {fileName:fileName,imgsrc:imgsrc};
+	return {fileName:fileName,imgsrc:imgsrc};	
 }
 
 function checkImageType(fileName){
@@ -398,29 +416,30 @@ $('.fileDrop').on('drop',function(event){
 		alert("파일 업로드는 3개까지만 허용됩니다.");
 		return;
 	}
-	var fileName,imgsrc,getLink;
+	var fileName,imgsrc;
 	
-	for(var file of files){		
-		if(file.size>1024*1024*5){
-			alert("파일 용량이 5MB를 초과하였습니다.");
-			return false;
-		}		
-		//getUploadFileInfo(file);
-		const reader = new FileReader();
-
-		reader.onload = function (event) {
-			//파일 정보 추가			
+	if (files) {
+	    [].forEach.call(files, readAndPreview);
+	 }
+	
+	function readAndPreview(file) {
+	   
+		var reader = new FileReader();
+		reader.addEventListener("load", function () {	
+			
 			fileFormData.append(file.name,file);
 			
-			// 썸네일 만들기.
-			var fileInfo=getUploadFileInfo(file.name,reader.result);
+			var fileInfo=getUploadFileInfo(file.name,this.result);
 			var html=template(fileInfo);
-			$(".uploadedList").append(html);			
-		};
+			$('.uploadedList').append(html);
+		}, false);
 		
 		reader.readAsDataURL(file);
 	}
+	
 });
+
+
 
 $('.uploadedList').on('click','.delbtn',function(e){
 	e.preventDefault();

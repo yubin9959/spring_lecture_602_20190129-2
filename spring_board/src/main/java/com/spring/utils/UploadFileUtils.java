@@ -21,6 +21,7 @@ public class UploadFileUtils {
 	//uloadFile 저장
 	public static String uploadFile(String uploadPath,
 								    String originalName,
+								    String loginUser_id,
 								    byte[] fileData)throws Exception{
 		
 		//중복파일명 해결..
@@ -28,7 +29,7 @@ public class UploadFileUtils {
 		String saveName=uid.toString().replace("-", "")+"$$"+originalName;
 		
 		//저장 경로..
-		String savePath=calcPath(uploadPath);
+		String savePath=calcPath(uploadPath,loginUser_id);
 		
 		//저장....
 		File target=new File(uploadPath+savePath,saveName);
@@ -51,7 +52,7 @@ public class UploadFileUtils {
 		return uploadFileName;
 	}
 	
-	public static String calcPath(String uploadPath)throws Exception{
+	public static String calcPath(String uploadPath,String loginUser_id)throws Exception{
 		Calendar cal=Calendar.getInstance();
 		
 		String yearPath=File.separator+cal.get(Calendar.YEAR);
@@ -60,24 +61,19 @@ public class UploadFileUtils {
 		String datePath=monthPath+File.separator+
 				new DecimalFormat("00").format(cal.get(Calendar.DATE));
 		
-		makeDir(uploadPath,yearPath,monthPath,datePath);
+		String savePath = File.separator+loginUser_id+datePath;
+		File path = new File(uploadPath+savePath);
 		
-		logger.info(datePath);
+		if(!path.exists()) {
+			path.mkdirs();
+		}		
 		
-		return datePath;
+		logger.info(savePath);
+		
+		return savePath;
 	} 
 	
-	public static void makeDir(String uploadPath,String... paths){
-		if(new File(paths[paths.length-1]).exists()){
-			return;
-		}
-		for(String path:paths){
-			File dirPath=new File(uploadPath+path);
-			if(!dirPath.exists()){
-				dirPath.mkdirs();
-			}
-		}
-	}
+	
 	
 	//썸네일 형태
 	public static String makeThumbnail(String uploadPath,

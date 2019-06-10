@@ -7,6 +7,7 @@ import java.io.InputStream;
 import java.util.List;
 
 import javax.annotation.Resource;
+import javax.servlet.http.HttpSession;
 
 import org.apache.commons.io.IOUtils;
 import org.slf4j.Logger;
@@ -23,6 +24,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
+import com.spring.dto.MemberVO;
 import com.spring.dto.NoticeAttachVO;
 import com.spring.dto.NoticeVO;
 import com.spring.service.NoticeService;
@@ -44,16 +46,18 @@ public class AttachController {
 	
 	@RequestMapping(value="/upload",method=RequestMethod.POST,
 			        produces="text/plain;charset=utf-8")
-	public ResponseEntity<String> upload(MultipartFile file)throws Exception{
+	public ResponseEntity<String> upload(MultipartFile file,HttpSession session)throws Exception{
 		
 		logger.info("originalName : "+file.getOriginalFilename());
 		logger.info("size : "+file.getSize());
 		logger.info("contentType : "+file.getContentType());
 		
-		
+		MemberVO loginUser = (MemberVO)session.getAttribute("loginUser");
+		String loginUser_id = loginUser.getId();
 		
 		return new ResponseEntity<String>(UploadFileUtils.uploadFile(uploadPath, 
 										  file.getOriginalFilename(), 
+										  loginUser_id,
 				                          file.getBytes()),
 					    			      HttpStatus.CREATED);
 		

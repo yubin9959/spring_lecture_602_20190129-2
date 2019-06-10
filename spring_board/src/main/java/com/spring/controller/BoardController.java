@@ -18,6 +18,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.spring.dto.BoardVO;
+import com.spring.dto.NoticeVO;
 import com.spring.request.Criteria;
 import com.spring.service.BoardService;
 import com.spring.service.NoticeService;
@@ -152,6 +153,19 @@ public class BoardController {
 		modelnView.setViewName(url);
 		
 		return modelnView;		
+	}
+	
+	@RequestMapping(value="/notice/regist",method=RequestMethod.POST)
+	public void noticeRegist(NoticeVO notice,HttpServletResponse response)throws Exception{
+		String url="redirect:list";
+		
+		nService.regist(notice);;
+		
+		response.setContentType("text/html;charset=utf-8");
+		PrintWriter out=response.getWriter();
+		out.println("<script>");
+		out.println("window.opener.location.reload();window.close();");
+		out.println("</script>");	
 	}
 }
 

@@ -187,7 +187,13 @@
 																${notice.writer }
 															</a>
 														</td>
-														<td></td>
+														<!-- 첨부 유무 -->
+														<td> 
+															<c:if test="${!empty notice.attachList }">
+																<i class="ace-icon fa fa-paperclip" title="첨부있음"></i>
+																
+															</c:if> 
+														</td>														
 														<td role="gridcell" style="text-align:center;" >${notice.viewcnt }</td>
 													</tr>
 													</c:forEach>

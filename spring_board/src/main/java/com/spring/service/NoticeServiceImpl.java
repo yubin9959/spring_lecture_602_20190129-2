@@ -34,7 +34,8 @@ public class NoticeServiceImpl implements NoticeService {
 		List<NoticeVO> pointNoticeList = getPointNoticeList(cri);
 	
 		for(NoticeVO notice : noticeList) {
-			notice=getNotice(notice.getNno());
+			List<NoticeAttachVO> attachList=attachDAO.selectAttachesByNno(notice.getNno());
+			notice.setAttachList(attachList);
 		}
 		
 		PageMaker pageMaker=new PageMaker();
@@ -53,7 +54,8 @@ public class NoticeServiceImpl implements NoticeService {
 		List<NoticeVO> noticeList = noticeDAO.selectPointNoticeList(cri);
 		
 		for(NoticeVO notice : noticeList) {
-			notice=getNotice(notice.getNno());
+			List<NoticeAttachVO> attachList=attachDAO.selectAttachesByNno(notice.getNno());
+			notice.setAttachList(attachList);
 		}
 		
 		return noticeList;

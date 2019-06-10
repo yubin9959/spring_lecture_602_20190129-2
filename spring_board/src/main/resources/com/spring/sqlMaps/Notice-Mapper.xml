@@ -44,7 +44,7 @@
 			from
 			notice
 			where nno is not null 
-				  and (endDate is null or endDate < sysdate) 	
+				  and (endDate is null or endDate > sysdate) 	
 		]]>		  	
 			<include refid="search" />
 			order by nno desc
@@ -58,7 +58,7 @@
 			from
 			notice
 			where nno is not null  
-				  and (endDate is null or endDate < sysdate) 	
+				  and (endDate is null or endDate > sysdate) 	
 		]]>		  	
 			<include refid="search" />
 		
@@ -71,7 +71,7 @@
 			from
 			notice
 			where point=1 
-			      and (endDate is null or endDate < sysdate) 		
+			      and (endDate is null or endDate > sysdate) 		
 			order by nno desc
 		]]>
 	</select>

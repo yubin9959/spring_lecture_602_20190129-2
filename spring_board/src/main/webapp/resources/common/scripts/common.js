@@ -1334,7 +1334,7 @@ function waitMsg(msg) {
 	var message = msg || "Processing ..... Wait";	
 	var tag;
 	tag = '<div style="font-size:17px;font-weight: bold;background: #fee188;height: 100%;border: 3px solid #337ab7;padding-top: 24px;">';
-	tag += '<img src="/common/jquery/css/validate/loading.gif" /> '+message+' </div>';
+	tag += '<img src="/resources/common/jquery/css/validate/loading.gif" /> '+message+' </div>';
 
 	$.blockUI({ 
 		message: tag, 

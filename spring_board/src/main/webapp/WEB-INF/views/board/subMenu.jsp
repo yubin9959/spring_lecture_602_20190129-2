@@ -52,7 +52,7 @@
 				<div class="sidebar-toggle sidebar-collapse">
 					<i class="ace-icon fa fa-angle-double-left" data-icon1="ace-icon fa fa-angle-double-left" data-icon2="ace-icon fa fa-angle-double-right"></i>
 				</div>
-				<div id="sidebar-BG" class="" style="background-image: url(&quot;/common/images/bg/busan-night-scene-228.jpg&quot;);">
+				<div id="sidebar-BG" class="" style="background-image: url('<%=request.getContextPath()%>/resources/common/images/bg/busan-night-scene-228.jpg');">
 				</div>
 			</div>
 
